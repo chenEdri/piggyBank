@@ -1,0 +1,28 @@
+user:{
+	id: String,
+	fullName: String,
+	email: String,
+	Password: String,
+	miniAccounts : [
+	           {
+		id: String,
+		name: String,
+		serialNumber: Number,
+		totalBudjet: Number,
+		isUserPermistionOnly: true/false,
+		connectionTo: null/ {
+				id: String,
+				fullName: String,
+				email: String
+				}
+		}
+	            ],
+	activities: [
+		  {
+		date: dateType (MM/DD/YY OR DD/MM/YY),
+		action: {
+			category: [ ],
+			description: String
+		 }
+		]
+        }

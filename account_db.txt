@@ -1,0 +1,50 @@
+account: {
+	id: String,
+	name: String,
+	isUserOnly: true/false,
+	currency: String,
+	date: dateType (MM/DD/YY OR DD/MM/YY),
+	users: [{
+		id:
+		fullName:
+		email
+	          },
+	        ],
+	totalBudjet: Number,
+	avgBudjet: Number,
+	isOverBudjet: true/false,
+	totalObligations: Number,
+	avgSpends: Number,
+	paymentOptions:[cash, credit-card, direct-debit],
+	categories:[
+	           { 
+		id: String,
+		name: String,
+		categoryColor: String,
+		budjet: Number,
+		isOverBudjet: true/false,
+		categoryObligations: Number,
+		subCategories:
+		           {
+			id: Stirng,
+			title: Stirng,
+			subCategoryColor: String,
+			budjet: Number,
+			isOverBudjet: true/ false,
+			subCatObligations: Number,
+			paymentDate: dateType,
+			activities:[
+			          	 {
+					id: String,
+					date: dateType,
+					payeeName: String,
+					amount: Number,
+			           	 },
+				],	
+			isPermanent: true/false,
+			PermanentCategories:[null, daily, weekly, monthly]
+			description: String,
+		            },
+		}
+	]
+}

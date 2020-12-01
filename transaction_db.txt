@@ -1,0 +1,33 @@
+transaction: {
+	id: String,
+	account: {
+		id: String,
+		name: String,
+		serialNumber: Number,
+		},
+	category:{
+		id: String,
+		title: String,
+		categoryColor: String,
+		subCategoryTitle: String
+		},
+	payeeName: String,
+	amount: Number,
+	date: dateType,
+	transactionMemo:
+	          {
+		location: {
+			lat: Stirng,
+			lng: String
+			},
+		notes: [
+			{
+			id: String,
+			name: String,
+			description: String
+		             },
+		          ]
+		}
+}
+
+		
